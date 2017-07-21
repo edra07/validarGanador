@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>
+  p&aacute;gina con Javascript.
+</title>
+<script language="javascript">
+	function ordenar(form) {
+		var myarray = new Array(form.N1.value, form.N2.value, form.N3.value)
+		document.write("Numeros: " + myarray.join()+"<p>");
+		document.write("N&uacute;meros Ordenados: " + myarray.sortNum());
+	}
+	Array.prototype.sortNum = function() {
+		return this.sort(function(a, b) { return a - b; });
+	} 
+</script>
+</head>
+<body>
+	<form name='form' onsubmit='ordenar(this);'>
+		<table>
+			<tr>
+				<td> Numero 1
+					<input type="text" name="N1">
+				</td>
+			</tr>
+			<tr>
+				<td> Numero 2
+					<input type="text" name="N2">
+				</td>
+			</tr>
+			<tr>
+				<td> Numero 3
+					<input type="text" name="N3">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<input type='submit' />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
