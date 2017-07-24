@@ -1,0 +1,16 @@
+@keyframes desplaza{
+	from{
+		margin-left: -30%;
+		opacity: 0.1;
+	}
+	to{
+		margin-left: 0%;
+		opacity: 1.0;
+	}
+}
+#imagenes {
+	float: left;
+	padding-left: 5%; /*margen interno izquierdo sirve para centrar y se le agrega al tamaÃ±o total del contenedor nada mÃ¡s para display y float*/
+	width: 25%;
+	animation: desplaza 3s ease;
+}

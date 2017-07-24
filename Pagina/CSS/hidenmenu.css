@@ -1,0 +1,158 @@
+ /*Basado en este modelo https://codepen.io/JamilF/pen/jIrqw*/
+ /*Buscador basado en https://codepen.io/912lab/pen/LsplC */
+ body {
+	height: 200px auto;
+	text-align: center;
+	
+	font-family: arial;
+	font-size: 16px ;
+	color: #fff;
+	line-height: 20px;
+	
+	&:first-line {
+		font-size: 22px;
+		line-height: 35px;
+	}
+}
+
+#menu {
+	position: fixed ;
+	width: 100% ;
+	background-color:#0080ff;
+	border-bottom: thin solid #bdc3c7;
+	z-index: 9998;
+	 margin: -10px auto;
+		    
+	max-width: 960px auto;
+	height: 55px auto;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .5s;
+	
+	&--top {
+		top: 1;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		
+		&.hide {
+			transform: translateX(-50%) translateY(-100%);
+		}
+	}
+			
+		&.hide {
+			transform: translateX(-50%) translateY(100%);
+		}
+	}
+
+}
+#settings a {
+  padding: 5px;
+  height: 5px;
+  font-size: 10px;
+  line-height: 24px;
+}
+#menu ul {
+	padding:0px;
+	padding-left: 30px;
+	margin:0px;
+	list-style:none;
+}
+
+#menu ul li{ 
+	display: inline-block; 
+}
+
+#menu ul li .brand a {
+	position: relative;
+	padding: 0;
+	border: none;
+	font-size: 18px;
+	vertical-align: middle;
+	margin-right: 150px;
+	transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-webkit-transition: .2s ease-out;
+}
+
+#menu ul li a {
+	font-family: Helvetica;
+	font-size: 15px;
+	padding: 10px 5px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#0080ff;
+	color: white;
+	text-decoration: none;
+	border-bottom:3px solid #283AFF;
+	transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-webkit-transition: .2s ease-out;
+}
+
+#menu ul li a:hover {
+	background-color:#1abc9c;
+	color: #fff;
+	border-bottom:3px solid #16a085;
+	transition: .2s ease-in;
+	-moz-transition: .2s ease-in;
+	-webkit-transition: .2s ease-in;
+}
+
+#menu .search a {
+	border-bottom:none;
+}
+
+#menu .search a:hover {
+	border-bottom:none;
+	color: #333;
+	background: transparent;
+}
+
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}

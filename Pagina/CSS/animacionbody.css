@@ -1,0 +1,39 @@
+@keyframes desplazaI{
+	from{
+		margin-right: -30%;
+		opacity: 0.1;
+	}
+	to{
+		margin-right: 0%;
+		opacity: 1.0;
+	}
+}
+@keyframes desplazaA{
+	from{
+		margin-top: 20%;
+		opacity: 0.1;
+	}
+	to{
+		margin-top: 0%;
+		opacity: 1.0;
+	}
+}
+
+#principal {
+	background-color: #F26b7C;
+	float: right;
+	padding-left: 5%; /*margen interno izquierdo sirve para centrar y se le agrega al tamaÃ±o total del contenedor nada mÃ¡s para display y float*/
+	width: 95%;
+	animation: desplazaI 2s linear;
+}
+#pie{
+	background-color: rgb(24,185,243);
+	float: left;
+	padding-left: 5%;
+	width: 95%;
+	animation: desplazaA 2s linear;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
