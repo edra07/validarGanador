@@ -1,4 +1,4 @@
-var imagen = {
+var imagen = [
 	{"id": "35895541381", "owner": "7800715@N08", "secret": "338fec5630", "server": "4306", "farm": 5, "title": "Seaport timelaps", "ispublic": 1, "isfriend": 0, "isfamily": 0 
 	},{
 	"id": "35639849520", "owner": "57090561@N08", "secret": "24d294453b", "server": "4292", "farm": 5, "title": "Signs", "ispublic": 1, "isfriend": 0, "isfamily": 0 
@@ -39,4 +39,8 @@ var imagen = {
 	},{
 	"id": "35895444381", "owner": "14533495@N00", "secret": "e7880d0696", "server": "4296", "farm": 5, "title": "DKH_6331", "ispublic": 1, "isfriend": 0, "isfamily": 0 
 	}
-}
+];
+console.log(imagen);
+
+imagenStr = JSON.stringify(imagen);
+console.log(imagenStr);
